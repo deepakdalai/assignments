@@ -57,4 +57,9 @@ Provided the input in the given format, write functions that shall do the follow
 3. get_trace() : Returns he trace all the way to the root 
    get_all_children("grains") Returns ["grains", "food", "all"]
 
+Create the tree from the data provided in the file input and provide the result by running the following commands
+get_immidiate_children("grains_oil_and_masala")
+get_all_children("dairy")
+get_trace("indian_breads")
+
 
