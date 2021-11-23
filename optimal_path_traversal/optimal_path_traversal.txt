@@ -1,0 +1,21 @@
+You are given a 2D matrix size N X M of positive integers. A journey starts from the top left cell (0, 0) and reaches the bottom right cell (N - 1, M - 1). You can only go down or move right from a cell. You cannot go left or up. The value of every cell you visit gets added to the cost of the journey. You need to return the following:
+
+1. Total cost for the most efficient journey (Least cost)
+2. The actual moves involved in making that journey 
+
+Example:
+
+6   9   9   9   9   9
+1   3   9   1   9   9
+9   1   1   2   9   9
+9   9   9   1   9   9
+9   9   9   1   9   9
+9   9   9   1   1   1
+
+
+Total Min Cost: 19
+Path: DRDRRDDDRR [D:Down R:Right]
+
+Input shall be provided as a single string of character where '/' separates the rows and '|' separated values. The matrix above shall hence be provided as following in input:
+6|9|9|9|9|9/1|3|9|1|9|9/9|1|1|2|9|9/9|9|9|1|9|9/9|9|9|1|9|9/9|9|9|1|1|1
+
