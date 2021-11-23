@@ -1,0 +1,60 @@
+A category tree has been represented as a list of parent child mappings. 
+So a category tree like this 
+
+all
+    electronics
+        mobile_phones
+        television
+        laptops
+        speakers                  
+    apparel
+        shirts
+        pants
+        skirts 
+        shoes
+    toys
+        construction
+        musical
+        puzzles
+    food
+        grains
+        oils 
+        masala 
+        chips 
+
+Is represented as follows: (node|parent)
+
+all|
+electronics|all
+apparel|all
+toys|all
+food|all
+mobile_phones|electronics
+television|electronics
+laptops|electronics
+speakers|electronics                  
+shirts|apparel
+pants|apparel
+skirts|apparel
+shoes|apparel
+construction|toys
+musical|toys
+puzzles|toys
+grains|food
+oils|food
+masala|food
+chips|food
+
+
+Provided the input in the given format, write functions that shall do the following 
+
+1. get_immidiate_children() : Retuns a list of all nodes that are immidiate children of the current node
+   get_immidiate_children("all") shall return ["electronics", "apparel", "toys", "food"]
+
+2. get_all_children() : Retuns a list of all nodes that fall under the tree of the current node
+   get_all_children("all") shall return ["electronics","mobile_phones","television","laptops","speakers","apparel","shirts","pants","skirts","shoes","toys","construction","musical","puzzles","food","grains","oils","masala", "chips"] 
+
+3. get_trace() : Returns he trace all the way to the root 
+   get_all_children("grains") Returns ["grains", "food", "all"]
+
+
